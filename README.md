@@ -4,6 +4,7 @@
 FROM php:8-apache
 
 # Install necessary packages and libraries
+```
 RUN apt-get update && apt-get install -y \
     libaio1 \
     unzip \
@@ -12,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     libpng-dev \
     libxml2-dev
-
+```
 # Install PHP extensions
 RUN docker-php-ext-install \
     zip \
